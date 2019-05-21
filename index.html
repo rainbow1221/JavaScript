@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <title>UFO Exist!</title>
+    <!-- Required meta tags -->
+    <meta charset="UTF-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.10.16/css/jquery.dataTables.css">
+    <link rel="stylesheet" type="text/css" href="style.css">
+  </head>
+
+
+  <body class="text-light bg-dark">
+
+
+
+    <!-- Main Content Area -->
+    <div class="container-fluid">
+      <div class="row m-2">
+        <img class="img-responsive" src="./pic/ufo.jpg" alt="UFO" style="width:100%">
+        <h1 class="pt-4 pl-4">UFO Sightings</h1>
+        <hr>
+        <h6> Meow, UFO does exist! If you don't believe, explore the report below.</h6>
+        <br>
+      </div>
+      <hr>
+      <div class="row m-2">
+        <div class="col-md-2 ml-4 mt-4 border border-light">
+          <h5>Want to explore more specific UFO data? feel free to make some choices here:</h5>
+          <br>
+          <div class="form-group">
+            <input type="text" class="form-control mb-4" id="date" placeholder="Date: m/d/yyyy">
+            <input type="text" class="form-control mb-4" id="city" placeholder="City">
+            <input type="text" class="form-control mb-4" id="state" placeholder="State">
+            <input type="text" class="form-control mb-4" id="country" placeholder="Country">
+            <input type="text" class="form-control mb-4" id="shape" placeholder="Shape">
+            <a id="search" class="btn btn-danger">Search</a>
+            <a id="reset" class="btn btn-secondary ml-2">RESET</a>
+          </div>
+        </div>
+        <div class="col-md-9 ml-4 mt-4 border border-light">
+          <p>The following table includes all of the data used for plotting during this project.</p>
+          <table class="table table-sm table-striped table-bordered table-responsive text-light bg-dark" id="table_id" data-page-length='25'>
+            <thead>
+              <tr>
+                <th>Date</th>
+                <th>City</th>
+                <th>State</th>
+                <th>Country</th>
+                <th>shape</th>
+                <th>duration_min</th>
+                <th>comment</th>
+              </tr>
+            </thead>
+            <!-- style="word-wrap: break-word;min-width: 160px;max-width: 650px; -->
+            <tbody>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+    <!-- jQuery library -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+    <!-- Popper JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
+    <!-- Latest compiled JavaScript -->
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
+    <!-- table jquery -->
+    <script type="text/javascript" charset="utf8" src="https://cdn.datatables.net/1.10.16/js/jquery.dataTables.js"></script>
+    <!-- D3 library -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/4.13.0/d3.min.js"></script>
+    <!-- inport data js-->
+    <script src="data.js" type="text/javascript"></script>
+    <!-- inport search.js-->
+    <script src="index.js" type="text/javascript"></script>
+    <script>
+    </script>
+
+
+  </body>
+
+  <br>
+
+
+</html>
